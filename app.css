@@ -463,9 +463,10 @@ div.connect-social-icons a{
     }
 
     .my-portfolio{
-        padding: 0 1.5rem;
+        padding: 0 1rem;
         height: 87rem;
         margin-top: 2rem;
+        text-align: center;
     }
 
     .portfolio{
