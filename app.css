@@ -334,6 +334,9 @@ section.Connect p{
     margin-right: 4rem;
     color: hsl(7, 97%, 65%);
     font-size: 2rem;
+    border: hidden;
+    outline: hidden;
+    background: transparent;
 }
 
 .portfolio{
