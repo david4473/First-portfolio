@@ -1,0 +1,533 @@
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+}
+
+body{
+    background-color: hsl(0, 0%, 17%);
+}
+
+div.container{
+    display: flex;
+}
+
+.container header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 13%);
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+header .logo{
+    flex: 5;
+    width: 100%;
+    height: 50px;
+}
+
+header .logo h3{
+    background-color: black;
+    padding: 40px;
+    color: white;
+    font-size: 70px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+}
+
+header .logo h3::after{
+    content: 'D';
+    position: absolute;
+    left: 30px;
+    color: hsl(7, 97%, 65%);
+}
+
+header .socials{
+    flex: 3;
+}
+
+header .socials i{
+    padding: 0 0.5rem;
+    color: hsl(7, 97%, 65%);
+}
+
+header nav{
+    flex: 6;
+    width: 100%;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(182, 182, 182);
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+li:nth-child(1){
+    border-top: 1px solid rgb(58, 58, 58);
+    padding-top: 20px;
+    border-bottom: 1px solid rgb(58, 58, 58);
+    padding-bottom: 20px;
+}
+
+li:nth-child(2){
+    border-bottom: 1px solid rgb(58, 58, 58);
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+li:nth-child(3){
+    border-bottom: 1px solid rgb(58, 58, 58);
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+li:nth-child(4){
+    border-top: 1px solid rgb(58, 58, 58);
+    padding-top: 20px;
+    border-bottom: 1px solid rgb(58, 58, 58);
+    padding-bottom: 20px;
+}
+
+li:nth-child(5){
+    border-top: 1px solid rgb(58, 58, 58);
+    padding-top: 20px;
+    border-bottom: 1px solid rgb(58, 58, 58);
+    padding-bottom: 20px;
+}
+
+section.hero-section{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem 3rem 5rem;
+    margin: 0 10rem 3rem 10rem;
+    background: url('./Assets/Images/svgs/Speedline-100s-2060px.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 80vw;
+}
+
+.introduction h1{
+    font-size: 5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    color: floralwhite;
+    margin: 0;
+}
+
+.introduction h1 span{
+    color: hsl(7, 97%, 65%);
+}
+
+.introduction h1 span::after{
+    content: 'D';
+    position: absolute;
+    left: 375px;
+    color: white;
+}
+
+.introduction p{
+    font-size: 1.2rem;
+    color: rgb(182, 182, 182);
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+
+.introduction button{
+    position: relative;
+    display: block;
+    font-size: 1rem;
+    padding: 0.3rem 0.5rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+    margin-top: 2rem;
+}
+
+.introduction button::before,
+.introduction button::after {
+  background-color: transparent;
+  content: "";
+  display: block;
+  position: absolute;
+  height: calc(50% - 0.4rem);
+  width: 100%;
+  border: 1px solid rgba(236, 232, 225, 0.5);
+  left: 0;
+}
+
+.introduction button::before {
+    border-bottom: 0;
+    top: 0;
+  }
+  
+  .introduction button::after {
+    border-top: 0;
+    bottom: 0;
+  }
+
+  
+.introduction button:hover {
+    color: white;
+  }
+
+  .label {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+  }
+  
+  .label:before {
+    content: "";
+    height: 100%;
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+  }
+
+ .hover-effect {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 120%;
+    top: 0;
+    left: -5%;
+    z-index: 1;
+    background-color: hsl(7, 97%, 65%);
+    transform: translateX(-100%) skew(-10deg);
+    transition: -webkit-transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
+  }
+  
+.introduction button:hover .hover-effect {
+    transform: translateX(0) skew(-10deg);
+  }
+  
+  .label-text {
+    position: relative;
+    display: block;
+    padding: 0.5rem 3rem;
+    background-color: transparent;
+    z-index: 1;
+  }
+  
+  .label-text:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 0.3rem;
+    width: 0.3rem;
+    right: 0;
+    bottom: 0;
+    background-color: #0f1923;
+    transition: background-color 0.2s ease-in;
+  }
+  button:hover .label-text:after {
+    background-color: white;
+  }
+
+h3.about-h3{
+    padding-left: 13rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: white;
+    line-height: 50px;
+    margin-bottom: 25px;
+}
+
+section.about-section p{
+    padding-left: 13rem;
+    font-family: 'Poppins', sans-serif;
+    line-height: 23px;
+    color: white;
+}
+
+section.about-section{
+    padding: 3rem;
+    height: 80vh;
+    display: flex;
+    width: 80vw;
+}
+
+section.about-section .about-texts{
+    width: 50rem;
+    flex: 1;
+}
+
+.my-portfolio{
+    width: 90vw;
+    color: white;
+    padding: 3rem;
+    height: 50vh;
+}
+
+section.my-portfolio h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 800;
+    padding-left: 13rem;
+}
+
+section.Connect{
+    width: 80vw;
+    color: white;
+    padding: 3rem 3rem 2rem 3rem;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section.Connect h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 800;
+    padding-left: 13rem;
+    margin-bottom: 2rem;
+}
+
+section.Connect p{
+    padding-left: 13rem;
+    font-family: 'Poppins', sans-serif;
+    line-height: 23px;
+    color: white;
+}
+
+.connect-text{
+    font-family: 'Poppins', sans-serif;
+    line-height: 23px;
+    color: white;
+    width: 70rem;
+}
+
+.connect-social-icons{
+    padding-left: 13rem;
+    display: flex;
+    align-items: center;
+}
+
+.connect-social-icons i{
+    margin-right: 4rem;
+    color: hsl(7, 97%, 65%);
+    font-size: 2rem;
+}
+
+.portfolio{
+    padding-left: 13rem;
+    display: flex;
+}
+
+.my-portfolio h3{
+    margin-bottom: 2rem;
+}
+
+.portfolio a img{
+    width: 20rem;
+    height: 19rem;
+}
+
+a img.first{
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+a img.last{
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.my-skills{
+    flex: 0.7;
+    padding-left: 10rem;
+}
+
+.skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+
+div .skills img{
+    width: 9rem;
+    height: auto;
+}
+
+h3.skills-h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: white;
+    line-height: 50px;
+    margin-bottom: 25px;
+}
+
+div.connect-social-icons a{
+    background-color:  hsl(7, 97%, 65%);
+    padding: 0.7rem 1rem;
+    border-radius: 0.3rem;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media screen and (min-width: 360px) and (max-width: 414px){
+    body{
+
+    }
+
+    .container header{
+     display: none;
+    }
+
+    section.hero-section{
+        height: 100vh;
+        padding: 0 2rem 3rem 1rem;
+        margin: 0 10rem 3rem 2rem;
+        width: 20rem;
+        margin: 0;
+    }
+
+    .introduction h1{
+        font-size: 2.5rem;
+        width: 22rem;
+    }
+
+    .introduction p{
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+    }
+
+    .label-text {
+        padding: 0.7rem 2rem;
+      }
+
+      .introduction button{
+        font-size: 0.8rem;
+        padding: 0.1rem 0.3rem;
+        margin-top: 2rem;
+    }
+
+    .introduction h1 span::after{
+        left: 138px;
+    }
+
+    section.about-section{
+        flex-direction: column;
+        padding: 1rem;
+        width: 21.3rem;
+        height: 68rem;
+    }
+
+    section.about-section .about-texts{
+        width: 21.5rem;
+        flex: 1;
+    }
+
+    h3.about-h3{
+        padding-left: 0rem;
+        font-size: 2.5rem;
+        margin-bottom: 25px;
+    }
+    
+    section.about-section p{
+        padding-left: 0rem;
+    }
+
+    section.my-portfolio h3{
+        font-size: 2.5rem;
+        font-weight: 800;
+        text-align: left;
+        padding-left: 1.2rem;
+    }
+
+    .my-portfolio{
+        padding: 0 1rem;
+        height: 87rem;
+        margin-top: 2rem;
+    }
+
+    .portfolio{
+        padding-left: 0.6rem;
+        flex-direction: column;
+    }
+    
+    
+    section.Connect{
+        width: 82vw;
+        color: white;
+        padding: 3rem 3rem 2rem 1rem;
+    }
+    
+    section.Connect h3{
+        font-size: 2.5rem;
+        padding-left: 0rem;
+        margin-bottom: 2rem;
+    }
+
+    section.Connect p{
+        padding-left: 0;
+    }
+
+    .my-skills{
+        padding-left: 0rem;
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    div .skills img{
+        width: 5rem;
+        height: auto;
+    }
+
+    h3.skills-h3{
+        font-size: 2.5rem;
+    }
+
+    .connect-text{
+        width: 20rem;
+    }
+
+    .connect-social-icons{
+        padding-left: 0.5rem;
+        margin-top: 2rem;
+        padding-bottom: 2rem;
+        width: 21.8rem;
+    }
+    
+    .connect-social-icons i{
+        margin-right: 2.6rem;
+        font-size: 1.5rem;
+    }
+
+    div.connect-social-icons a{
+        display: inline;
+    background-color:  hsl(7, 97%, 65%);
+    padding: 0.7rem 1rem;
+    border-radius: 0.3rem;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+}
