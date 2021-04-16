@@ -402,6 +402,10 @@ div.connect-social-icons a.btn{
 
     }
 
+    div.container{
+        overflow-x: visible;
+    }
+
     .container header{
      display: none;
     }
@@ -418,6 +422,7 @@ div.connect-social-icons a.btn{
         font-size: 2.5rem;
         width: 22rem;
     }
+
 
     .introduction p{
         font-size: 0.9rem;
@@ -436,7 +441,9 @@ div.connect-social-icons a.btn{
 
     .introduction h1 span::after{
         left: 83px;
-    }
+        padding: 0;
+        margin: 0;
+        }
 
     section.about-section{
         flex-direction: column;
@@ -471,6 +478,7 @@ div.connect-social-icons a.btn{
         padding: 0 1rem 0 1.5rem;
         height: 87rem;
         margin-top: 2rem;
+        width: 20rem;
     }
 
     .portfolio{
