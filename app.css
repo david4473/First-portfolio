@@ -430,7 +430,7 @@ div.connect-social-icons a{
     }
 
     .introduction h1 span::after{
-        left: 138px;
+        left: 90px;
     }
 
     section.about-section{
@@ -523,11 +523,7 @@ div.connect-social-icons a{
 
     div.connect-social-icons a{
         display: inline;
-    background-color:  hsl(7, 97%, 65%);
-    padding: 0.7rem 1rem;
-    border-radius: 0.3rem;
-    color: white;
-    font-family: 'Poppins', sans-serif;
+        padding: 0.7rem 1rem;
 }
 
 }
