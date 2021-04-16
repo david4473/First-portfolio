@@ -526,4 +526,17 @@ div.connect-social-icons a{
         padding: 0.7rem 1rem;
 }
 
+a img.first{
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 0;
+}
+
+a img.last{
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
 }
